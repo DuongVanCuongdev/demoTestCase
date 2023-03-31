@@ -43,7 +43,7 @@ describe('Đây là nhóm test case dành cho hàm Login()', () => {
     
 
     test('TC10: Đăng nhập đúng thông tin', () => {
-        expect(app.login("khachuong", "12345678")).toMatchObject({isSuccess: true, message: "Đăng nhập thành công!"})
+        expect(app.login("duongcuong", "12345678")).toMatchObject({isSuccess: true, message: "Đăng nhập thành công!"})
     })
 })
 
@@ -125,7 +125,7 @@ describe('Đây là nhóm test case dành cho hàm changePassword()', () => {
     })
 
     test('TC07: Tài khoản và mật khẩu mới trùng nhau', () => {
-        expect(app.changePassword("duongcuong", "12345678", "duongcuong")).toMatchObject({isSuccess: false, message: "Tài khoản và mật khẩu không được trùng nhau"})
+        expect(app.changePassword("duongcuong", "12345678", "duongcuong")).toMatchObject({isSuccess: false, message: "Tài khoản và mật khẩu mới không được trùng nhau"})
     })
 
     test('TC08: Kiểu dữ liệu truyền vào bị sai', () => {
